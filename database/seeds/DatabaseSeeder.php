@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             'money' => true,
             'work_stages' =>true,
             'notifications' => true,
+            'users' => true,
             'user_id' => 1
         ]);
         
