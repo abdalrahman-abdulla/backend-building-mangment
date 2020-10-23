@@ -15,13 +15,14 @@ class DatabaseSeeder extends Seeder
         DB::table('permissions')->insert([
             'name' => "admin",
             'statistics' => true,
-            'Buildings' => true,
-            'Revenues' => true,
+            'buildings' => true,
+            'revenues' => true,
             'money' => true,
             'work_stages' =>true,
             'notifications' => true,
             'user_id' => 1
         ]);
+        
         }
-          
+         
 }
