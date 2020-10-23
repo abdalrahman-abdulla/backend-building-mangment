@@ -11,12 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'id'=>1,
-            'username' => "ali09",
-            'name' => "ali abdulla", 
-            'password' => Hash::make('password'),
-        ]);
+        
         DB::table('permissions')->insert([
             'name' => "admin",
             'statistics' => true,
