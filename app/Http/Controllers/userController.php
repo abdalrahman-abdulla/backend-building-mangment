@@ -53,8 +53,8 @@ class userController extends Controller
         permission::create([
             'name' => $permission['permission_name'],
             'statistics' => $permission['statistics'],
-            'Buildings' => $permission['buildings'],
-            'Revenues' => $permission['revenues'],
+            'buildings' => $permission['buildings'],
+            'revenues' => $permission['revenues'],
             'money' => $permission['money'],
             'work_stages' => $permission['work_stages'],
             'notifications' => $permission['notifications'],
