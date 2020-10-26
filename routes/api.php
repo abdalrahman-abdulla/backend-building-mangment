@@ -45,6 +45,8 @@ Route::post('building/{id}', 'buildingController@show');
 Route::put('building/{id}', 'buildingController@update');
 Route::post('users/{id}', 'userController@update');
 
+Route::post('statistics', 'statController@index');
+
 
 Route::group([
 

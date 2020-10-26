@@ -8,7 +8,7 @@ class permission extends Model
 {
     
     protected $fillable = [
-        'name','statistics','Buildings','Revenues','work_stages','money','notifications','user_id'
+        'name','statistics','buildings','revenues','work_stages','money','notifications','user_id'
     ];
  
     public function user()

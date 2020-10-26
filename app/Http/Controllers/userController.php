@@ -41,8 +41,11 @@ class userController extends Controller
             "password"=>"required|string|min:8",
             "permission.permission_name"=>"required|string|min:3"
         ],
-        ['without_spaces' => 'do not use space in username',
-        'permission.permission_name.required'=>"permission name is required"]);
+        ['required' => 'هذا الحقل مطلوب',
+        'min'=>"يجب ان يتجاوز هذا الحقل الثلاث احرف",
+        'Date'=>"يجب ادخال تاريخ صالح",
+        'without_spaces' => 'يجب ان يخلو من الفواصل',
+        'permission.permission_name.required'=>'هذا الحقل مطلوب']);
          
         $user=User::create([
             'username' => $request['username'],
