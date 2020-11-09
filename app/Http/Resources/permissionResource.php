@@ -13,7 +13,7 @@ class permissionResource extends JsonResource
      * @return array
      */
     public function toArray($request)
-    {
+    { 
         return [
             
             'permission_name' => $this->name,
@@ -25,7 +25,7 @@ class permissionResource extends JsonResource
             'work_stages' => $this->work_stages,
             'notifications' => $this->notifications,
             
-
+             
             
              
         ];
